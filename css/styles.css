@@ -1,0 +1,20 @@
+.font-com-borda{
+    -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #000;
+font-size: 3em; color: #fffdd9;
+}
+
+.corpo{
+margin-top: 30px;
+
+}
+
+.compra{
+margin-top: 20px;
+
+}
+
+.tamanho{
+margin-top: 10px;
+
+}
