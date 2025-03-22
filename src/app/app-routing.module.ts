@@ -5,7 +5,7 @@ import { ProdutoComponent } from './view/produto/produto.component';
 
 const routes: Routes = [
 {path:'',component: HomeComponent},
-{path:'produto',component: ProdutoComponent}
+{path:'produto/:id',component: ProdutoComponent}
 ];
 
 

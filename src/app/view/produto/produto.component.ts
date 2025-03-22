@@ -1,4 +1,6 @@
 import { Component, Input, input } from '@angular/core';
+import { ProdutoService } from '../../services/produto.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-produto',
@@ -7,5 +9,15 @@ import { Component, Input, input } from '@angular/core';
   styleUrl: './produto.component.css'
 })
 export class ProdutoComponent {
+  public produto: any;
+
+  constructor(private produtoService: ProdutoService,
+    private route: ActivatedRoute
+  ) { }
+  ngOnInit(): void {
+    this.produtoService.obterprodutorId(this.route.snapshot.params['id']).subscribe(res=>{
+      this.produto = res;
+    });
+  }
 
 }

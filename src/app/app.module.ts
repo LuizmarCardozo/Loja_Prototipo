@@ -9,6 +9,7 @@ import { ProdutoComponent } from './view/produto/produto.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProdutoDetalheComponent } from './view/home/components/produto-detalhe/produto-detalhe.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +23,9 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
