@@ -1,5 +1,6 @@
 {
     "id": 1,
-    "titulo":"Teste",
-    "valor": 100
+    "titulo": "Allstar Branco",
+    "valor": 180,
+    "img": "/img/branco.jpeg"
 }

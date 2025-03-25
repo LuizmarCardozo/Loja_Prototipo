@@ -15,7 +15,7 @@ export class ProdutoComponent {
     private route: ActivatedRoute
   ) { }
   ngOnInit(): void {
-    this.produtoService.obterprodutorId(this.route.snapshot.params['id']).subscribe(res=>{
+    this.produtoService.getProdutos(this.route.snapshot.params['id']).subscribe(res=>{
       this.produto = res;
     });
   }

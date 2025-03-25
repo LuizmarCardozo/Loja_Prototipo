@@ -1,7 +1,6 @@
-<div class="card" style="width: 18rem;">
-    <img src="{{img}}" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">{{titulo}}</h5>
-        <a routerLink="{{link}}" class="btn btn-primary">Conferir</a>
-    </div>
+<div class="produto-detalhe">
+  <img [src]="img" alt="{{ titulo }}" />
+  <h3>{{ titulo }}</h3>
+  <p>Preço: R$ {{ valor }}</p>
+  <button class="btn btn-primary">Comprar</button>
 </div>

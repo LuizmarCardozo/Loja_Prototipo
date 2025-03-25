@@ -8,9 +8,12 @@ import { environment } from '../../environments/environment';
 })
 export class ProdutoService {
 
+  private baseUrl = '/json/';
+
   constructor(private http: HttpClient) { }
 
-  obterprodutorId(id:number): Observable<any>{
-    return this.http.get<any>(`${environment.api}${id}.json`);
+  getProdutos(fileName: string): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}${fileName}`);
   }
 }
+

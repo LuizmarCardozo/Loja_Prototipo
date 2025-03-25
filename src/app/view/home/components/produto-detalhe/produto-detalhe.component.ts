@@ -11,4 +11,5 @@ export class ProdutoDetalheComponent {
   @Input() titulo:string="";
   @Input() link:string="";
   @Input() img:string="";
+  @Input() valor!: number;
 }
