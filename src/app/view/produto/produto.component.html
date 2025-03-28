@@ -1,1 +1,15 @@
-<h1>{{produto.titulo}}</h1>
+<div class="container text-center mt-5">
+    <div class="row">
+      <div class="col">
+        <img [src]="produto?.imagens[0]" class="img-fluid" alt="Imagem do Produto">
+      </div>
+  
+      <div class="col">
+        <h1>{{ produto?.titulo }}</h1>
+        <h3>Por apenas R$ {{ produto?.valor }}</h3>
+        <h5>R$15,00 em 12x sem juros!</h5>
+        <button type="button" class="btn btn-primary btn-lg">Comprar</button>
+        <button type="button" class="btn btn-secondary btn-lg">Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </div>

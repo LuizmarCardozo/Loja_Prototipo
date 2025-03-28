@@ -1,15 +1,15 @@
 <app-banner></app-banner>
 <div class="corpo container text-center">
-    <div class="row">
-      <div
-        class="col-12 col-md-3 col-lg-3"
-        *ngFor="let produto of produtos"
-      >
-        <app-produto-detalhe
-          [img]="produto.img || '/img/default.jpg'"
-          [titulo]="produto.titulo" 
-          [link]="'produto/' + produto.id"
-          [valor]="produto.valor"
-        ></app-produto-detalhe>
+  <div class="row">
+    <div *ngFor="let produto of produtos" class="col-md-4">
+      <app-produto-detalhe
+        [id]="produto.id"
+        [titulo]="produto.titulo"
+        [valor]="produto.valor"
+        [img]="produto.img">
+      </app-produto-detalhe>
+      <a [routerLink]="'/' + produto.link" class="btn btn-primary">Ver mais</a>
+      <button [routerLink]="'/' + produto.link" class="btn btn-success">Comprar agora</button>
     </div>
+  </div>
   </div>

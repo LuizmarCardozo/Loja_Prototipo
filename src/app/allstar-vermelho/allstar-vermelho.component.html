@@ -1,0 +1,13 @@
+<div class="container text-center">
+    <div class="row">
+      <div class="produto-detalhe">
+        <h1>{{ titulo }}</h1>
+        <h3>Por apenas R$ {{ valor }}</h3>
+        <div class="galeria-imagens">
+          <img *ngFor="let imagem of imagens" [src]="imagem" alt="{{ titulo }}" class="img-fluid" />
+        </div>
+        
+        <button class="btn btn-primary">Comprar agora</button>
+      </div>
+      
+</div>

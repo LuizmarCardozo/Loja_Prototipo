@@ -1,0 +1,50 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .produto-detalhe {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .produto-detalhe img {
+    width: 250px; 
+    height: auto; 
+    margin: 20px 15px;
+    border-radius: 5px;
+  }
+  
+  
+  .produto-detalhe h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .produto-detalhe p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .produto-detalhe button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+  .col {
+    flex: 1 1 calc(25% - 20px); 
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+  }
