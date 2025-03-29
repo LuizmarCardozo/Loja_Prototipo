@@ -1,15 +1,38 @@
 <div class="container text-center mt-5">
-    <div class="row">
-      <div class="col">
-        <img [src]="produto?.imagens[0]" class="img-fluid" alt="Imagem do Produto">
-      </div>
-  
-      <div class="col">
-        <h1>{{ produto?.titulo }}</h1>
-        <h3>Por apenas R$ {{ produto?.valor }}</h3>
-        <h5>R$15,00 em 12x sem juros!</h5>
-        <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-        <button type="button" class="btn btn-secondary btn-lg">Adicionar ao carrinho</button>
+  <div class="row">
+    <div class="col">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div *ngFor="let img of produto.imagens" class="carousel-item active">
+            <img src="{{img.path}}" class="img" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
+    <div class="col">
+      <h1>{{ produto?.titulo }}</h1>
+      <h3>Por apenas R$ {{ produto?.valor }}</h3>
+      <h5>R$15,00 em 12x sem juros!</h5>
+      <button type="button" class="btn btn-primary btn-lg">Comprar</button>
+      <button type="button" class="btn btn-secondary btn-lg">Adicionar ao carrinho</button>
+    </div>
   </div>
+</div>

@@ -1,0 +1,32 @@
+[{
+    "id": 1,
+    "titulo": "Allstar Vermelho",
+    "valor": 180,
+    "img": "/img/vermelho.jpeg",
+    "link": "allstar-vermelho"
+  },
+
+  {
+    "id": 2,
+    "titulo": "Allstar Azul",
+    "valor": 200,
+    "img": "/img/azul.jpeg",
+    "link": "allstar-azul"
+  },
+
+    {
+    "id": 3,
+    "titulo": "Allstar Preto",
+    "valor": 180,
+    "img": "/img/preto.jpeg",
+    "link": "allstar-preto"
+    },
+
+    {
+    "id": 4,
+    "titulo": "Allstar Branco",
+    "valor": 180,
+    "img": "/img/branco.jpeg",
+    "link": "allstar-branco"
+    }
+]

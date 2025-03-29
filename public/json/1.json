@@ -2,6 +2,5 @@
     "id": 1,
     "titulo": "Allstar Vermelho",
     "valor": 180,
-    "img": "/img/vermelho.jpeg",
-    "link": "allstar-vermelho"
+    "img": ["/img/vermelho.jpeg","img/vermelho1.jpg","img/vermelho2.jpg"]
   }

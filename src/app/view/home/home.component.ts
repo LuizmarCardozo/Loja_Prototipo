@@ -8,17 +8,15 @@ import { ProdutoService } from '../../services/produto.service';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit{
-  produtos: any[] = [];
+  produtos?: any[];
 
   constructor(private produtoService: ProdutoService) {}
 
   ngOnInit(): void {
-    const arquivos = ['1.json', '2.json', '3.json', '4.json'];
+    
 
-  arquivos.forEach((arquivo) => {
-    this.produtoService.getProdutos(arquivo).subscribe((data) => {
-      this.produtos.push(data); 
+    this.produtoService.getProdutos().subscribe((data) => {
+      this.produtos = data; 
     });
-  });
 }
 }

@@ -2,6 +2,6 @@
     "id": 3,
     "titulo": "Allstar Preto",
     "valor": 180,
-    "img": "/img/preto.jpeg",
+    "img": ["/img/preto.jpeg","img/preto1.jpg","img/preto2.jpg"],
     "link": "allstar-preto"
 }

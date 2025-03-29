@@ -2,4 +2,6 @@
   <img [src]="img" alt="{{ titulo }}" />
   <h3>{{ titulo }}</h3>
   <p>Preço: R$ {{ valor }}</p>
+  <a routerLink="/produto/{{id}}" class="btn btn-primary">Ver mais</a>
+  <button routerLink="/produto/{{id}}" class="btn btn-success">Comprar agora</button>
 </div>
